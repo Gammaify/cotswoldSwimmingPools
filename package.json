@@ -10,7 +10,9 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "nitropack": "^2.9.7",
     "nuxt": "^3.13.2",
+    "nuxt-security": "^2.0.0",
     "vue": "latest",
     "vue-router": "latest"
   }
