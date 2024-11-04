@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="client: chrome" type="JavascriptDebugType" engineId="3beb9cdf-3d67-427a-8a8e-3576cc85ee02" uri="http://localhost:3000" useFirstLineBreakpoints="true">
+    <method v="2" />
+  </configuration>
+</component>
