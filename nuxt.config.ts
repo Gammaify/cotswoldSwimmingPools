@@ -11,5 +11,16 @@ export default defineNuxtConfig({
       include: ["/"]
     }
   },
+  css: ['~/assets/css/main.css', '~/assets/css/app.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  components: {
+    global: true,
+    dirs: ['~/components']
+},
   modules: ['nuxt-security']
 })
