@@ -21,21 +21,29 @@
     </div>
     <header class="flex justify-center p-3 shadow-xl">
       <div class="w-full md:w-5/6 flex justify-between">
-        <div id="logo" class="w-44">
+        <div id="logo" class="w-40">
           <a href="/">
             <img src="/images/logo.png" alt="cotswold swimming pools logo">
           </a>
         </div>
-        <Navbar />
-
+        <Navbar :is-open="isOpen" />
+        <div id="mobileMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
+          <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
+          <span v-else class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-300"></span>
+        </div>
       </div>
 
     </header>
   </div>
 </template>
 
-<script>
+<script setup lang="ts">
+  let isOpen = useState<Boolean>('isOpen', () => false);
 
+
+  function OpenMenu(){
+    isOpen.value = !isOpen.value;
+  }
 
 
 </script>
