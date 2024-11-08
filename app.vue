@@ -2,13 +2,17 @@
 </script>
 
 <template>
-  <div>
+  <div class="min-w-80">
     <Head>
       <Link rel="preconnect" href="https://fonts.googleapis.com" />
       <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" />
-      <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/material-icons@latest/iconfont/material-icons.min.css" rel="stylesheet">
+      <Link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+      <Link href="https://cdn.jsdelivr.net/npm/material-icons@latest/iconfont/material-icons.min.css" rel="stylesheet" />
+      <Link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+      <Link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+      <Link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+      <Link rel="manifest" href="/site.webmanifest" />
     </Head>
     <NuxtLayout>
       <NuxtPage />

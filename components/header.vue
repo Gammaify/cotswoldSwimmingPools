@@ -21,12 +21,13 @@
     </div>
     <header class="flex justify-center p-3 shadow-xl">
       <div class="w-full md:w-5/6 flex justify-between">
-        <div id="logo" class="w-40">
+        <div id="logo" class="w-36">
           <a href="/">
             <img src="/images/logo.png" alt="cotswold swimming pools logo">
           </a>
         </div>
-        <Navbar :is-open="isOpen" />
+          <Navbar :is-open="isOpen" />
+
         <div id="mobileMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
           <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
           <span v-else class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-300"></span>
@@ -44,6 +45,20 @@
   function OpenMenu(){
     isOpen.value = !isOpen.value;
   }
+
+  onMounted(() => {
+    window.addEventListener("resize", handleWindowSizeChange);
+    handleWindowSizeChange();
+  });
+  onUnmounted(() => {
+    window.removeEventListener("resize", handleWindowSizeChange);
+  });
+
+  const handleWindowSizeChange = () => {
+    if (window.innerWidth >= 768){
+      isOpen.value = false;
+    }
+  };
 
 
 </script>
