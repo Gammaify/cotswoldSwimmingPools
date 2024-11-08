@@ -22,3 +22,5 @@ logs
 .env
 .env.*
 !.env.example
+/public/images/20240422_123749.jpg
+/public/images/20240422_124156.jpg

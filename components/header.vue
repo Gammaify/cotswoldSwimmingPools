@@ -14,7 +14,7 @@
         <p>Message us on WhatsApp</p>
       </a>
       <a href="tel:07484 033916" class="flex">
-        <span class="icon-[ic--sharp-phone] w-6 h-6 mr-1"></span>
+        <span class="icon-[mingcute--phone-line] w-6 h-6 mr-1"></span>
         <p>Call Now: 07484 033916</p>
       </a>
 

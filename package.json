@@ -12,12 +12,14 @@
   "dependencies": {
     "@iconify-json/hugeicons": "^1.2.1",
     "@iconify-json/ic": "^1.2.1",
+    "@iconify-json/mdi": "^1.2.1",
     "@iconify-json/mingcute": "^1.2.1",
     "nitropack": "^2.9.7",
     "nuxt": "^3.13.2",
     "nuxt-security": "^2.0.0",
     "vue": "latest",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vue3-carousel": "^0.5.1"
   },
   "devDependencies": {
     "@iconify/tailwind": "^1.1.3",

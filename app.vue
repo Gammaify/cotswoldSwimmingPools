@@ -2,7 +2,6 @@
 </script>
 
 <template>
-  <div class="min-w-80">
     <Head>
       <Link rel="preconnect" href="https://fonts.googleapis.com" />
       <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,8 +13,14 @@
       <Link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
       <Link rel="manifest" href="/site.webmanifest" />
     </Head>
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+    <Body class="min-w-80">
+      <div class="flex flex-col h-screen justify-between">
+        <Header />
+        <div class="mb-auto">
+          <NuxtPage />
+        </div>
+        <Footer />
+      </div>
+    </Body>
+
 </template>
