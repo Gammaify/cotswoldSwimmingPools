@@ -30,7 +30,8 @@
 
         <div id="burgerMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
           <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
-          <span v-else class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-300"></span>
+          <span v-else-if="isOpen == true" class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-300"></span>
+          <span v-else class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
         </div>
       </div>
 
@@ -41,7 +42,7 @@
 <script setup lang="ts">
 
 
-  let isOpen = useState<Boolean>('isOpen', () => false);
+  let isOpen = useState<Boolean | undefined>('isOpen', () => undefined);
 
 
   function OpenMenu(){

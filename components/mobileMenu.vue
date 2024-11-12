@@ -1,3 +1,4 @@
+
 <template>
 
     <nav v-if="isOpen" id="mobileMenu" class="block md:hidden absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade">
@@ -46,7 +47,7 @@
     </nav>
 
 
-    <nav v-else id="mobileMenu" class="md:hidden absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade animate-reverse">
+    <nav v-else-if="isOpen == false" id="mobileMenu" class="absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade animate-reverse md:hidden">
       <div class="w-full bg-blue-300 flex justify-evenly items-center p-2">
         <a href="https://www.instagram.com/cotswoldswimmingpools" target="_blank" class="flex">
           <span class="icon-[hugeicons--instagram] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
@@ -90,13 +91,15 @@
         </li>
       </ul>
     </nav>
+  <nav v-else id="mobileMenu" class="hidden absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl">
 
+  </nav>
 
 </template>
 
 <script setup lang="ts">
 
 const props = defineProps<{
-  isOpen?: Boolean
+  isOpen?: Boolean | undefined
 }>()
 </script>
