@@ -28,7 +28,7 @@
         </div>
           <Navbar :is-open="isOpen" />
 
-        <div id="mobileMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
+        <div id="burgerMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
           <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
           <span v-else class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-300"></span>
         </div>
@@ -39,6 +39,8 @@
 </template>
 
 <script setup lang="ts">
+
+
   let isOpen = useState<Boolean>('isOpen', () => false);
 
 
