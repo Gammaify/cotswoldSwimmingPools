@@ -18,6 +18,7 @@
     "nitropack": "^2.9.7",
     "nuxt": "^3.13.2",
     "nuxt-security": "^2.0.0",
+    "tailwindcss-animated": "^1.1.2",
     "vue": "latest",
     "vue-router": "latest",
     "vue3-carousel": "^0.5.1"

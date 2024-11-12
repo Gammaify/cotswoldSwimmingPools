@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   security: {
     headers:{
       contentSecurityPolicy: {
-        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk"]
+        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk", "http://front-end-noobs.com"]
       }
     },
     basicAuth: {

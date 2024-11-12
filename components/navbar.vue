@@ -2,28 +2,28 @@
   <nav class="hidden md:flex">
     <ul class="flex items-center">
       <li class="p-3">
-        <a href="/">
-          <p>Home</p>
+        <a href="/" >
+          <p class="hover:animate-wiggle animate-infinite">Home</p>
         </a>
       </li>
       <li class="p-3">
         <a href="/">
-          <p>Services</p>
+          <p class="hover:animate-wiggle animate-infinite">Services</p>
         </a>
       </li>
       <li class="p-3">
         <a href="/">
-          <p>Testimonials</p>
+          <p class="hover:animate-wiggle animate-infinite">Testimonials</p>
         </a>
       </li>
       <li class="p-3">
         <a href="/">
-          <p>About</p>
+          <p class="hover:animate-wiggle animate-infinite">About</p>
         </a>
       </li>
       <li class="p-3">
         <a href="/">
-          <p>Contact</p>
+          <p class="hover:animate-wiggle animate-infinite">Contact</p>
         </a>
       </li>
     </ul>
@@ -32,46 +32,92 @@
 
 
   <div v-if="isOpen">
-    <nav class="block md:hidden absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl">
+    <nav class="block md:hidden absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade-down">
       <div class="w-full bg-blue-300 flex justify-evenly items-center p-2">
-        <a href="https://www.instagram.com/cotswoldswimmingpools" class="flex">
-          <span class="icon-[hugeicons--instagram] w-8 h-8 text-blue-950"></span>
+        <a href="https://www.instagram.com/cotswoldswimmingpools" target="_blank" class="flex">
+          <span class="icon-[hugeicons--instagram] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
         </a>
-        <a href="https://wa.me/447484033916" class="flex">
-          <span class="icon-[ic--baseline-whatsapp] w-8 h-8 text-blue-950"></span>
+        <a href="https://wa.me/447484033916" target="_blank" class="flex">
+          <span class="icon-[ic--baseline-whatsapp] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
         </a>
         <a href="tel:07484 033916" class="flex">
-          <span class="icon-[mingcute--phone-line] w-8 h-8 text-blue-950"></span>
+          <span class="icon-[mingcute--phone-line] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
         </a>
         <a href="mailto:info@cotswoldswimmingpools.co.uk" class="flex">
-          <span class="icon-[mdi--email-outline] w-8 h-8 text-blue-950"></span>
+          <span class="icon-[mdi--email-outline] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
         </a>
 
       </div>
       <ul class="block text-center">
         <li>
           <a href="/">
-            <p class="p-2">Home</p>
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Home</p>
           </a>
         </li>
         <li>
           <a href="/">
-            <p class="p-2">Services</p>
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Services</p>
           </a>
         </li>
         <li>
           <a href="/">
-            <p class="p-2">Testimonials</p>
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Testimonials</p>
           </a>
         </li>
         <li>
           <a href="/">
-            <p class="p-2">About</p>
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">About</p>
           </a>
         </li>
         <li>
           <a href="/">
-            <p class="p-2">Contact</p>
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Contact</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div v-else>
+    <nav class="block md:hidden absolute top-20 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade-down animate-reverse">
+      <div class="w-full bg-blue-300 flex justify-evenly items-center p-2">
+        <a href="https://www.instagram.com/cotswoldswimmingpools" target="_blank" class="flex">
+          <span class="icon-[hugeicons--instagram] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
+        </a>
+        <a href="https://wa.me/447484033916" target="_blank" class="flex">
+          <span class="icon-[ic--baseline-whatsapp] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
+        </a>
+        <a href="tel:07484 033916" class="flex">
+          <span class="icon-[mingcute--phone-line] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
+        </a>
+        <a href="mailto:info@cotswoldswimmingpools.co.uk" class="flex">
+          <span class="icon-[mdi--email-outline] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
+        </a>
+
+      </div>
+      <ul class="block text-center">
+        <li>
+          <a href="/">
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Services</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Testimonials</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">About</p>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Contact</p>
           </a>
         </li>
       </ul>

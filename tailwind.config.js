@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const { addDynamicIconSelectors } = require('@iconify/tailwind');
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -12,6 +13,6 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [addDynamicIconSelectors()],
+  plugins: [addDynamicIconSelectors(), require('tailwindcss-animated')],
 }
 
