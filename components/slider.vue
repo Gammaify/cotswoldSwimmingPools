@@ -3,9 +3,10 @@
 </style>
 
 <template>
+
   <Carousel v-bind="config">
-    <Slide v-for="slide in images" :key="slide">
-      <img :src="slide" alt="test" />
+    <Slide v-for="slide in data" :key="slide?.image_position">
+      <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_file}`" :alt="`${slide?.alternative_text}`" />
     </Slide>
 
     <template #addons>
@@ -14,6 +15,22 @@
   </Carousel>
 </template>
 <script setup lang="ts">
+
+
+
+
+
+interface Slides {
+  image_position: number;
+  image_file: string;
+  alternative_text: string;
+}
+
+
+
+
+
+
 import 'vue3-carousel/dist/carousel.css'
 import {Carousel, Slide, Navigation} from "vue3-carousel";
 
@@ -24,8 +41,6 @@ const config = {
   autoplay: 8000
 }
 
-const images = [
-    "/images/pool_angle_1.jpg",
-    "/images/pool_angle_2.jpg",
-]
+const { data } = useFetch<Slides[]>("/api/cms/image-slider");
+
 </script>

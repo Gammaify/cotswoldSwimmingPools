@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   security: {
+    headers:{
+      contentSecurityPolicy: {
+        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk"]
+      }
+    },
     basicAuth: {
       name: "csp",
       pass: "csp1768422",

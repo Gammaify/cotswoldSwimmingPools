@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@directus/sdk": "^18.0.0",
     "@iconify-json/hugeicons": "^1.2.1",
     "@iconify-json/ic": "^1.2.1",
     "@iconify-json/mdi": "^1.2.1",
