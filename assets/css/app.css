@@ -54,19 +54,15 @@
     font-style: normal;
 }
 
-.eb-garamond-regular
-{
-  font-family: "EB Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.cardo-regular {
+    font-family: "Cardo", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.eb-garamond-semibold
-{
-    font-family: "EB Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
+.cardo-bold {
+    font-family: "Cardo", serif;
+    font-weight: 700;
     font-style: normal;
 }
 

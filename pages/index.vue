@@ -1,12 +1,14 @@
 <template>
  <Slider />
+ <Services />
+ <Testimonials />
 
 
 
 
 </template>
 <script setup lang="ts">
-import Slider from "~/components/slider.vue";
+
 
 
 </script>
