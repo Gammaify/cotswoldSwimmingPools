@@ -15,7 +15,9 @@
         <a href="mailto:info@cotswoldswimmingpools.co.uk" class="flex">
           <span class="icon-[mdi--email-outline] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
         </a>
-
+        <a href="tel:01242 644100" class="flex">
+          <span class="icon-[majesticons--phone-retro-line] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
+        </a>
       </div>
       <ul class="block text-center">
         <li>
@@ -24,14 +26,14 @@
           </a>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/#services" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Services</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/#testimonials" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Testimonials</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
           <a href="/">
@@ -61,7 +63,9 @@
         <a href="mailto:info@cotswoldswimmingpools.co.uk" class="flex">
           <span class="icon-[mdi--email-outline] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
         </a>
-
+        <a href="tel:01242 644100" class="flex">
+          <span class="icon-[majesticons--phone-retro-line] w-8 h-8 text-blue-950 hover:animate-wiggle-more animate-infinite"></span>
+        </a>
       </div>
       <ul class="block text-center">
         <li>
@@ -70,14 +74,14 @@
           </a>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/#services"  @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Services</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/#testimonials" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Testimonials</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
           <a href="/">
@@ -102,4 +106,7 @@
 const props = defineProps<{
   isOpen?: Boolean | undefined
 }>()
+
+
+
 </script>

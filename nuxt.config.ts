@@ -27,5 +27,10 @@ export default defineNuxtConfig({
     global: true,
     dirs: ['~/components']
 },
+  router: {
+    options: {
+      scrollBehaviorType: 'smooth'
+    }
+  },
   modules: ['nuxt-security']
 })

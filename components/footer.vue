@@ -1,11 +1,12 @@
 <template>
     <footer class="bg-blue-300 p-3 flex justify-center flex-wrap relative ">
       <div class="block md:flex items-center justify-between w-full md:w-5/6 z-10">
-        <div id="logo" class="w-52 m-auto md:m-0 z-10 hover:animate-wiggle animate-infinite">
-          <a href="/">
-            <img src="/images/logo.png" alt="cotswold swimming pools logo">
-          </a>
-        </div>
+        <a href="/" class="hover:animate-wiggle animate-infinite">
+          <div id="logo" class="w-52 m-auto md:m-0 z-10 ">
+            <img src="/images/logo.png" alt="cotswold swimming pools logo" />
+          </div>
+        </a>
+
         <div id="footerLinks" class="w-80 m-auto mt-3 md:w-fit md:m-0 md:mt-0 z-10">
           <ul class="font-medium">
             <li>
@@ -23,13 +24,19 @@
             <li>
               <a href="tel:07484 033916" class="flex items-center hover:animate-wiggle animate-infinite pb-2">
                 <span class="icon-[mingcute--phone-line] w-8 h-8 text-blue-950 mr-2"></span>
-                <p>Call Now: 07484 033916</p>
+                <p>Call Mobile: 07484 033916</p>
               </a>
             </li>
             <li>
-              <a href="mailto:info@cotswoldswimmingpools.co.uk" class="flex items-center hover:animate-wiggle animate-infinite">
+              <a href="mailto:info@cotswoldswimmingpools.co.uk" class="flex items-center hover:animate-wiggle animate-infinite pb-2">
                 <span class="icon-[mdi--email-outline] w-8 h-8 text-blue-950 mr-2"></span>
                 <p>info@cotswoldswimmingpools.co.uk</p>
+              </a>
+            </li>
+            <li>
+              <a href="tel:01242 644100" class="flex items-center hover:animate-wiggle animate-infinite">
+                <span class="icon-[majesticons--phone-retro-line] w-8 h-8 text-blue-950 mr-2"></span>
+                <p>Call Landline: 01242 644100</p>
               </a>
             </li>
           </ul>

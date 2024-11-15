@@ -7,14 +7,14 @@
         </a>
       </li>
       <li class="p-3">
-        <a href="/">
+        <NuxtLink to="/#services">
           <p class="hover:animate-wiggle animate-infinite">Services</p>
-        </a>
+        </NuxtLink>
       </li>
       <li class="p-3">
-        <a href="/">
+        <NuxtLink to="/#testimonials">
           <p class="hover:animate-wiggle animate-infinite">Testimonials</p>
-        </a>
+        </NuxtLink>
       </li>
       <li class="p-3">
         <a href="/">
@@ -31,15 +31,14 @@
 
 
 
-  <MobileMenu :is-open="isOpen" />
+  <MobileMenu :is-open="isOpen" @close-menu="$emit('closeMenu')" />
 
 </template>
 <script setup lang="ts">
 
 
 
-
-  const props = defineProps<{
+ defineProps<{
     isOpen?: Boolean
   }>()
 

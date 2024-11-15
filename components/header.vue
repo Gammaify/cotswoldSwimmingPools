@@ -21,12 +21,14 @@
     </div>
     <header class="flex justify-center p-3 shadow-xl">
       <div class="w-full md:w-5/6 flex justify-between">
+        <a href="/">
         <div id="logo" class="w-36 hover:animate-wiggle animate-infinite">
-          <a href="/">
+
             <img src="/images/logo.png" alt="cotswold swimming pools logo">
-          </a>
+
         </div>
-          <Navbar :is-open="isOpen" />
+        </a>
+          <Navbar :is-open="isOpen" @close-menu="CloseMenu" />
 
         <div id="burgerMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
           <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
@@ -40,7 +42,7 @@
 </template>
 
 <script setup lang="ts">
-
+  defineEmits(['closeMenu'])
 
   let isOpen = useState<Boolean | undefined>('isOpen', () => undefined);
 
@@ -49,6 +51,10 @@
     isOpen.value = !isOpen.value;
 
 
+  }
+
+  function CloseMenu(){
+    isOpen.value = false;
   }
 
   onMounted(() => {
