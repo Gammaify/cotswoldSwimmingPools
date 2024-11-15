@@ -105,3 +105,28 @@ h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+#servicesSlider .carousel__icon {
+    fill: #15254e !important;
+}
+#servicesSlider .carousel__slide{
+    padding: 0 3% 0 3%;
+}
+
+#servicesSlider .carousel__next{
+    right: -30px;
+}
+
+#servicesSlider .carousel__prev{
+    left: -30px;
+}
+
+.carousel__pagination-button--active::after{
+    background-color: #92c5fc !important;
+    border-radius: 50px;
+}
+
+.carousel__pagination-button::after{
+    background-color: #92c5fc !important;
+    border-radius: 50px;
+}
