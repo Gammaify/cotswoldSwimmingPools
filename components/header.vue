@@ -5,9 +5,9 @@
 <template>
   <div class="figtree-500">
     <div id="topBanner" class="hidden md:flex justify-evenly items-center bg-blue-300 text-blue-950 p-3">
-      <a href="https://www.instagram.com/cotswoldswimmingpools" target="_blank" class="flex hover:animate-wiggle animate-infinite">
-        <span class="icon-[hugeicons--instagram] w-6 h-6 flex mr-1"></span>
-        <p>Instagram</p>
+      <a href="tel:01242 644100" class="flex hover:animate-wiggle animate-infinite">
+        <span class="icon-[majesticons--phone-retro-line] w-6 h-6 mr-1"></span>
+        <p>Call Now: 01242 644100</p>
       </a>
       <a href="https://wa.me/447484033916" class="flex hover:animate-wiggle animate-infinite">
         <span class="icon-[ic--baseline-whatsapp] w-6 h-6 mr-1"></span>
