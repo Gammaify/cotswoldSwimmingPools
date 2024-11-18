@@ -4,7 +4,7 @@
   <Carousel id="servicesSlider" v-bind="config" class="pb-3 w-3/4 md:2/4 m-auto">
     <Slide v-for="slide in data" :key="slide.id">
       <div class=" border-2 border-blue-950 rounded">
-        <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_of_service}`" alt="" class="pl-3 pt-3 pr-3" />
+        <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_of_service}?width=500&height=500`" :alt="`${slide?.alternative_text}`" class="pl-3 pt-3 pr-3" />
         <p class="text-xl text-blue-950 p-3">{{ slide.Name }}</p>
       </div>
 
@@ -23,12 +23,15 @@ interface Services {
   id: number;
   Name: string;
   image_of_service: string;
+  alternative_text: string;
 }
 
 const config = {
   itemsToScroll: 1,
   itemsToShow: 1,
   wrapAround: true,
+  autoplay: 10000,
+  pauseAutoplayOnHover: true,
   breakpoints: {
     768:{
       itemsToScroll: 2,

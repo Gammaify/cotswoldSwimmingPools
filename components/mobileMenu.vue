@@ -102,7 +102,7 @@
 </template>
 
 <script setup lang="ts">
-
+defineEmits(['closeMenu'])
 const props = defineProps<{
   isOpen?: Boolean | undefined
 }>()

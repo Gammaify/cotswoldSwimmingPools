@@ -16,6 +16,7 @@
     "@iconify-json/majesticons": "^1.2.1",
     "@iconify-json/mdi": "^1.2.1",
     "@iconify-json/mingcute": "^1.2.1",
+    "@img-comparison-slider/vue": "^8.0.0",
     "jquery": "^3.7.1",
     "nitropack": "^2.9.7",
     "nuxt": "^3.13.2",

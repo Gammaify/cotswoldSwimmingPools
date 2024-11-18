@@ -36,7 +36,7 @@
 </template>
 <script setup lang="ts">
 
-
+defineEmits(['closeMenu'])
 
  defineProps<{
     isOpen?: Boolean

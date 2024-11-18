@@ -8,7 +8,7 @@ export default defineEventHandler( async () => {
 
     return await client.request(
         readItems('Services', {
-            fields: ['id', 'Name', 'image_of_service'],
+            fields: ['id', 'Name', 'image_of_service', 'alternative_text'],
         })
     )
 })

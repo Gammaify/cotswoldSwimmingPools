@@ -6,7 +6,7 @@
 
   <Carousel v-bind="config">
     <Slide v-for="slide in data" :key="slide?.image_position">
-      <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_file}`" :alt="`${slide?.alternative_text}`" />
+      <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_file}?width=1920&height=700`" :alt="`${slide?.alternative_text}`" />
     </Slide>
 
     <template #addons>

@@ -130,3 +130,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #92c5fc !important;
     border-radius: 50px;
 }
+
+.rendered:focus{
+    outline: none;
+}
+
+.rendered{
+    --divider-width: 5px;
+    --divider-color: #172554;
+    --default-handle-opacity: 0;
+}
