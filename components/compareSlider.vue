@@ -30,37 +30,52 @@
 
 </style>
 <template>
-  <div class="w-11/12 md:w-3/4 lg:w-1/2 m-auto block ">
-    <ImgComparisonSlider>
-      <figure slot="first" class="before">
-        <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${data?.before_image}`" alt="" />
-        <figcaption>Before</figcaption>
-      </figure>
-      <figure slot="second" class="after">
-        <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${data?.after_image}`" alt="" />
-        <figcaption>After</figcaption>
-      </figure>
+  <h2 class="cardo-bold text-4xl text-center text-blue-950 pt-3 pb-3">Before & Afters</h2>
+  <div class="w-11/12 md:w-3/4 lg:w-1/2 m-auto block " id="compareSlider">
+    <Carousel v-bind="config">
+      <Slide v-for="slide in data" :key="slide.image_position">
+        <ImgComparisonSlider>
+          <figure slot="first" class="before">
+            <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.before_image}?width=800&height=600`" alt="" />
+            <figcaption>Before</figcaption>
+          </figure>
+          <figure slot="second" class="after">
+            <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.after_image}?width=800&height=600`" alt="" />
+            <figcaption>After</figcaption>
+          </figure>
 
-    </ImgComparisonSlider>
+        </ImgComparisonSlider>
+      </Slide>
+      <template #addons>
+        <Navigation />
+      </template>
+    </Carousel>
+
   </div>
 
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
- id?: number | undefined;
-}>()
+
+import {Carousel, Slide, Navigation} from "vue3-carousel";
 import { ImgComparisonSlider } from '@img-comparison-slider/vue';
 
 interface CompareSlider{
+  image_position: number;
   before_image: string;
   after_image: string;
 }
 
-const { data } = useFetch<CompareSlider>('/api/cms/compare-slider', {
-  method: 'POST',
-  body: JSON.stringify({ id: props.id })
-})
+const config = {
+  itemsToShow: 1,
+  wrapAround: true,
+  mouseDrag: false,
+  touchDrag: false,
+  autoplay: 10000,
+  pauseAutoplayOnHover: true,
+}
+
+const { data } = useFetch<CompareSlider[]>('/api/cms/compare-slider')
 
 
 </script>

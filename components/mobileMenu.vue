@@ -21,9 +21,9 @@
       </div>
       <ul class="block text-center">
         <li>
-          <a href="/">
+          <NuxtLink to="/" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Home</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/#services" @click="$emit('closeMenu')">
@@ -36,9 +36,9 @@
           </NuxtLink>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/about" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">About</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
           <a href="/">
@@ -69,9 +69,9 @@
       </div>
       <ul class="block text-center">
         <li>
-          <a href="/">
+          <NuxtLink to="/" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">Home</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/#services"  @click="$emit('closeMenu')">
@@ -84,9 +84,9 @@
           </NuxtLink>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/about" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite">About</p>
-          </a>
+          </NuxtLink>
         </li>
         <li>
           <a href="/">

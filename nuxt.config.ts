@@ -32,5 +32,11 @@ export default defineNuxtConfig({
       scrollBehaviorType: 'smooth'
     }
   },
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    }
+  },
   modules: ['nuxt-security']
 })

@@ -2,9 +2,9 @@
   <nav class="hidden md:flex">
     <ul class="flex items-center">
       <li class="p-3">
-        <a href="/" >
+        <NuxtLink to="/">
           <p class="hover:animate-wiggle animate-infinite">Home</p>
-        </a>
+        </NuxtLink>
       </li>
       <li class="p-3">
         <NuxtLink to="/#services">
@@ -17,9 +17,9 @@
         </NuxtLink>
       </li>
       <li class="p-3">
-        <a href="/">
+        <NuxtLink to="/about">
           <p class="hover:animate-wiggle animate-infinite">About</p>
-        </a>
+        </NuxtLink>
       </li>
       <li class="p-3">
         <a href="/">

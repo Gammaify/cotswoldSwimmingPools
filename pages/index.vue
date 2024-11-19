@@ -1,12 +1,12 @@
 
 <template>
- <Slider />
-  <div class="flex justify-evenly pt-3">
-    <CompareSlider :id="1" />
+  <div>
+    <Slider />
+    <CompareSlider />
+    <Services />
+    <Testimonials />
   </div>
 
- <Services />
- <Testimonials />
 
 
 

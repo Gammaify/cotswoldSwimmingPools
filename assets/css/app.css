@@ -106,18 +106,18 @@ h1, h2, h3, h4, h5, h6 {
     isolation: isolate;
 }
 
-#servicesSlider .carousel__icon {
+#servicesSlider .carousel__icon, #compareSlider .carousel__icon{
     fill: #15254e !important;
 }
-#servicesSlider .carousel__slide{
+#servicesSlider .carousel__slide, #compareSlider .carousel__slide{
     padding: 0 3% 0 3%;
 }
 
-#servicesSlider .carousel__next{
+#servicesSlider .carousel__next, #compareSlider .carousel__next{
     right: -30px;
 }
 
-#servicesSlider .carousel__prev{
+#servicesSlider .carousel__prev, #compareSlider .carousel__prev{
     left: -30px;
 }
 

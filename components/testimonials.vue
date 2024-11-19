@@ -21,7 +21,6 @@
 </template>
 
 <script setup lang="ts">
-
 import {Carousel, Slide, Pagination} from "vue3-carousel";
 
 interface Testimonial {
