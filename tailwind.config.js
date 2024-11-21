@@ -11,7 +11,14 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blue: {
+          925: '#2f336c',
+          250: '#46baeb'
+        }
+      }
+    },
   },
   plugins: [addDynamicIconSelectors(), require('tailwindcss-animated')],
 }

@@ -1,11 +1,15 @@
-
+<style>
+.border-beige{
+  border-color: #CCC291;
+}
+</style>
 <template>
-  <h1 id="services" class="cardo-bold text-4xl text-center text-blue-950 pt-3 pb-3">Services</h1>
+  <h1 id="services" class="cardo-bold text-4xl text-center  pt-3 pb-3 text-blue-925">Services</h1>
   <Carousel id="servicesSlider" v-bind="config" class="pb-3 w-3/4 md:2/4 m-auto">
     <Slide v-for="slide in data" :key="slide.id">
-      <div class=" border-2 border-blue-950 rounded">
+      <div class=" border-4 border-beige rounded">
         <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_of_service}?width=500&height=500`" :alt="`${slide?.alternative_text}`" class="pl-3 pt-3 pr-3" />
-        <p class="text-xl text-blue-950 p-3">{{ slide.Name }}</p>
+        <p class="text-xl text-blue-925 p-3">{{ slide.Name }}</p>
       </div>
 
     </Slide>

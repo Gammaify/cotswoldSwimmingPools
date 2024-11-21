@@ -4,7 +4,7 @@
 
 <template>
   <div class="figtree-500">
-    <div id="topBanner" class="hidden md:flex justify-evenly items-center bg-blue-300 text-blue-950 p-3">
+    <div id="topBanner" class="hidden md:flex justify-evenly items-center bg-blue-250 text-blue-925 p-3">
       <a href="tel:01242 644100" class="flex hover:animate-wiggle animate-infinite">
         <span class="icon-[majesticons--phone-retro-line] w-6 h-6 mr-1"></span>
         <p>Call Now: 01242 644100</p>
@@ -22,7 +22,7 @@
     <header class="flex justify-center p-3 shadow-xl">
       <div class="w-full md:w-5/6 flex justify-between">
         <a href="/">
-        <div id="logo" class="w-36 hover:animate-wiggle animate-infinite">
+        <div id="logo" class="w-56 hover:animate-wiggle animate-infinite">
 
             <img src="/images/logo.png" alt="cotswold swimming pools logo">
 
@@ -31,8 +31,8 @@
           <Navbar :is-open="isOpen" @close-menu="CloseMenu" />
 
         <div id="burgerMenu" class="flex items-center md:hidden hover:cursor-pointer" @click="OpenMenu">
-          <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
-          <span v-else-if="isOpen == true" class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-300"></span>
+          <span v-if="isOpen == false" class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-250"></span>
+          <span v-else-if="isOpen == true" class="icon-[mingcute--close-fill] w-10 h-10 bg-blue-250"></span>
           <span v-else class="icon-[mingcute--menu-fill] w-10 h-10 bg-blue-300"></span>
         </div>
       </div>

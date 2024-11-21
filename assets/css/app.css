@@ -1,3 +1,5 @@
+
+
 .figtree-300
 {
   font-family: "Figtree", sans-serif;
@@ -107,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #servicesSlider .carousel__icon, #compareSlider .carousel__icon{
-    fill: #15254e !important;
+    fill: #1e3a8a !important;
 }
 #servicesSlider .carousel__slide, #compareSlider .carousel__slide{
     padding: 0 3% 0 3%;
@@ -137,6 +139,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .rendered{
     --divider-width: 5px;
-    --divider-color: #172554;
+    --divider-color: #CCC291;
     --default-handle-opacity: 0;
 }

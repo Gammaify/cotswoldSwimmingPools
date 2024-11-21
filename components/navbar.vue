@@ -3,27 +3,27 @@
     <ul class="flex items-center">
       <li class="p-3">
         <NuxtLink to="/">
-          <p class="hover:animate-wiggle animate-infinite">Home</p>
+          <p class="hover:animate-wiggle animate-infinite text-blue-925">Home</p>
         </NuxtLink>
       </li>
       <li class="p-3">
         <NuxtLink to="/#services">
-          <p class="hover:animate-wiggle animate-infinite">Services</p>
+          <p class="hover:animate-wiggle animate-infinite text-blue-925">Services</p>
         </NuxtLink>
       </li>
       <li class="p-3">
         <NuxtLink to="/#testimonials">
-          <p class="hover:animate-wiggle animate-infinite">Testimonials</p>
+          <p class="hover:animate-wiggle animate-infinite text-blue-925">Testimonials</p>
         </NuxtLink>
       </li>
       <li class="p-3">
         <NuxtLink to="/about">
-          <p class="hover:animate-wiggle animate-infinite">About</p>
+          <p class="hover:animate-wiggle animate-infinite text-blue-925">About</p>
         </NuxtLink>
       </li>
       <li class="p-3">
         <a href="/">
-          <p class="hover:animate-wiggle animate-infinite">Contact</p>
+          <p class="hover:animate-wiggle animate-infinite text-blue-925">Contact</p>
         </a>
       </li>
     </ul>

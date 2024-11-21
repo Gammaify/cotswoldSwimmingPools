@@ -19,7 +19,7 @@ useHead({
       <Link rel="manifest" href="/site.webmanifest" />
 
     </Head>
-    <Body class="min-w-80">
+    <Body class="min-w">
       <div class="flex flex-col h-screen justify-between">
         <Header />
         <div class="mb-auto">
@@ -33,6 +33,7 @@ useHead({
 
 
 <style>
+
 .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;

@@ -1,13 +1,13 @@
 <template>
   <div class="waveWrapper waveAnimation">
     <div class="waveWrapperInner bgTop">
-      <div class="wave waveTop" style="background-image: url('/images/wave-top.png')"></div>
+      <div class="wave waveTop" style="background-image: url('/images/wave-top2.png')"></div>
     </div>
     <div class="waveWrapperInner bgMiddle">
-      <div class="wave waveMiddle" style="background-image: url('/images/wave-mid.png')"></div>
+      <div class="wave waveMiddle" style="background-image: url('/images/wave-mid2.png')"></div>
     </div>
     <div class="waveWrapperInner bgBottom">
-      <div class="wave waveBottom" style="background-image: url('/images/wave-bot.png')"></div>
+      <div class="wave waveBottom" style="background-image: url('/images/wave-bot2.png')"></div>
     </div>
   </div>
 
@@ -25,8 +25,14 @@
     transform: translateX(-50%) translateZ(0) scaleY(1)
   }
 }
+
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .waveWrapper {
-  overflow: hidden;
   position: absolute;
   left: 0;
   right: 0;

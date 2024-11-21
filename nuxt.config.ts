@@ -38,5 +38,10 @@ export default defineNuxtConfig({
       mode: 'out-in'
     }
   },
-  modules: ['nuxt-security']
+  turnstile: {
+    siteKey: '0x4AAAAAAA0ggsrIdD6SUCoV',
+    secretKey: '0x4AAAAAAA0ggptKCoeOah6Tyf4mWya8iEw',
+    addValidateEndpoint: true
+  },
+  modules: ['nuxt-security', "@nuxtjs/turnstile"]
 })
