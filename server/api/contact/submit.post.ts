@@ -11,9 +11,14 @@ export default defineEventHandler( async (event) => {
             createItem('Contacts', {
                 "full_name": data.full_name,
                 "email": data.email,
+                "phone": data.phone,
                 "subject": data.subject,
                 "email_content": data.email_content
             })
         )
+        return 'true';
+    }
+    else{
+        return 'false';
     }
 })

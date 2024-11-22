@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   security: {
     headers:{
       contentSecurityPolicy: {
-        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk", "http://front-end-noobs.com"]
+        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk", "http://front-end-noobs.com"],
       }
     },
     basicAuth: {
@@ -36,7 +36,7 @@ export default defineNuxtConfig({
     pageTransition: {
       name: 'page',
       mode: 'out-in'
-    }
+    },
   },
   turnstile: {
     siteKey: '0x4AAAAAAA0ggsrIdD6SUCoV',

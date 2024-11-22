@@ -27,7 +27,6 @@
 }
 
 
-
 </style>
 <template>
   <h2 class="cardo-bold text-4xl text-center text-blue-925 pt-3 pb-3">Before & Afters</h2>
@@ -50,7 +49,7 @@
         <Navigation />
       </template>
     </Carousel>
-
+    <p class="text-center text-blue-925 font-bold">(Use your finger/mouse to drag the centre bar to view the before and after)</p>
   </div>
 
 </template>

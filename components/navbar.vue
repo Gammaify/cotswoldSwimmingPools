@@ -22,9 +22,9 @@
         </NuxtLink>
       </li>
       <li class="p-3">
-        <a href="/">
+        <NuxtLink to="/contact">
           <p class="hover:animate-wiggle animate-infinite text-blue-925">Contact</p>
-        </a>
+        </NuxtLink>
       </li>
     </ul>
   </nav>
