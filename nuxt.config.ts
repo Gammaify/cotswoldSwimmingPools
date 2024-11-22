@@ -43,5 +43,5 @@ export default defineNuxtConfig({
     secretKey: '0x4AAAAAAA0ggptKCoeOah6Tyf4mWya8iEw',
     addValidateEndpoint: true
   },
-  modules: ['nuxt-security', "@nuxtjs/turnstile"]
+  modules: ['nuxt-security', "@nuxtjs/turnstile", "@pinia/nuxt"]
 })

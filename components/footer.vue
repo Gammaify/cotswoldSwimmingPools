@@ -43,7 +43,7 @@
         </div>
       </div>
         <p class="w-full font-medium flex justify-center mt-5 text-xs z-10 text-blue-925">&copy; Copyright {{ year }} Cotswold Swimming Pools Ltd.</p>
-        <p class="w-full font-medium flex justify-center text-xs z-10 text-blue-925"><a class="pl-1" href="https://www.gammaify.com">Developed by Gammaify</a></p>
+        <p class="w-full font-medium flex justify-center text-xs z-10 text-blue-925"><a class="pl-1" target="_blank" href="https://www.gammaify.com">Developed by Gammaify.com</a></p>
 
       <WaveAnimation/>
     </footer>

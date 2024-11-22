@@ -1,7 +1,9 @@
+<style>
 
+</style>
 <template>
 
-    <nav v-if="isOpen" id="mobileMenu" class="block md:hidden absolute top-28 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade">
+    <nav v-if="isOpen" id="mobileMenu" class="block md:hidden absolute top-28 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fading">
       <div class="w-full bg-blue-250 flex justify-evenly items-center p-2">
         <a href="https://www.instagram.com/cotswoldswimmingpools" target="_blank" class="flex">
           <span class="icon-[hugeicons--instagram] w-8 h-8 text-blue-925 hover:animate-wiggle-more animate-infinite"></span>
@@ -41,15 +43,15 @@
           </NuxtLink>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/contact" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite text-blue-925">Contact</p>
-          </a>
+          </NuxtLink>
         </li>
       </ul>
     </nav>
 
 
-    <nav v-else-if="isOpen == false" id="mobileMenu" class="absolute top-28 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fade animate-reverse md:hidden">
+    <nav v-else-if="isOpen == false" id="mobileMenu" class="absolute top-28 w-full left-0 z-10 bg-white min-w-80 shadow-xl animate-fading animate-reverse md:hidden">
       <div class="w-full bg-blue-250 flex justify-evenly items-center p-2">
         <a href="https://www.instagram.com/cotswoldswimmingpools" target="_blank" class="flex">
           <span class="icon-[hugeicons--instagram] w-8 h-8 text-blue-925 hover:animate-wiggle-more animate-infinite"></span>
@@ -89,9 +91,9 @@
           </NuxtLink>
         </li>
         <li>
-          <a href="/">
+          <NuxtLink to="/contact" @click="$emit('closeMenu')">
             <p class="w-fit m-auto p-2 hover:animate-wiggle animate-infinite text-blue-925">Contact</p>
-          </a>
+          </NuxtLink>
         </li>
       </ul>
     </nav>

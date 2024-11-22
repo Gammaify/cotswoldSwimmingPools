@@ -42,11 +42,11 @@
 </template>
 
 <script setup lang="ts">
+
+
   defineEmits(['closeMenu'])
 
   let isOpen = useState<Boolean | undefined>('isOpen', () => undefined);
-
-
   function OpenMenu(){
     isOpen.value = !isOpen.value;
 
@@ -70,6 +70,10 @@
       isOpen.value = false;
     }
   };
+
+
+</script>
+<script lang="ts">
 
 
 </script>

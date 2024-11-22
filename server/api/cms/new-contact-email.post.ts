@@ -18,7 +18,7 @@ export default defineEventHandler( async (event) => {
 
     const mailOptions = {
         from: '"Web Team" <noreply@gammaify.com>',
-        to: 'oliver@gammaify.com',
+        to: 'info@cotswoldswimmingpools.co.uk',
         subject: '[NEW] Contact Submission',
         html: `<p>Hello James,</p><i>You have a new message below from a customer:</i><hr><p><b><u>Contact Details</u></b></p><p>Full Name: ${ full_name }</p><p>Email: ${ email }</p><p>Phone: ${ phone }</p><b><u>Message Details</u></b><p>Subject: ${ subject }</p><p>Message: ${ email_content }</p><hr><b>Do not reply to this email. You will have to create a new email to respond to the customer.</b><p>Kind Regards,</p><p>Web Team</p>`,
     };
