@@ -5,9 +5,9 @@ export default defineNuxtConfig({
   security: {
     headers:{
       contentSecurityPolicy: {
-        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk", "http://front-end-noobs.com"],
+        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk", "http://front-end-noobs.com", "https://maps.gstatic.com", "https://maps.googleapis.com", "https://vuejs.org"],
       },
-      crossOriginResourcePolicy: 'cross-origin',
+      crossOriginResourcePolicy: 'same-site',
       crossOriginEmbedderPolicy: 'credentialless'
     },
     basicAuth: {
