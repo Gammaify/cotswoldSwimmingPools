@@ -49,7 +49,7 @@
         class="w-full h-72 md:h-auto md:w-1/2 p-3"
         style="border:0"
         referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA635ClbGrjbWf6-jb6bYYk2ZX7XT1i7QQ&q=51.88753516860897, -2.1347550019665325"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBCLzJHGBBLI7T6FZjqlpyaxHgWtjOtNH8&q=51.88753516860897, -2.1347550019665325"
         allowfullscreen>
       </iframe>
 
