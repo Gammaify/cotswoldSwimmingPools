@@ -29,7 +29,7 @@
 
 </style>
 <template>
-  <h2 class="cardo-bold text-4xl text-center text-blue-925 pt-3 pb-3">Before & Afters</h2>
+  <h2 class="cardo-bold text-4xl text-center text-blue-925 pt-3 pb-3">Transformations</h2>
   <div class="w-11/12 md:w-3/4 lg:w-1/2 m-auto block " id="compareSlider">
     <Carousel v-bind="config">
       <Slide v-for="slide in data" :key="slide.image_position">
@@ -49,7 +49,7 @@
         <Navigation />
       </template>
     </Carousel>
-    <p class="text-center text-blue-925 font-bold">(Use your finger/mouse to drag the centre bar to view the before and after)</p>
+    <p class="text-center text-blue-925 font-bold">(Use your finger/mouse to drag the centre bar to view the transformations)</p>
   </div>
 
 </template>
