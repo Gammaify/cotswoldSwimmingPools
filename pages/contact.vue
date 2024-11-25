@@ -52,17 +52,6 @@
         src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBCLzJHGBBLI7T6FZjqlpyaxHgWtjOtNH8&q=51.88753516860897, -2.1347550019665325"
         allowfullscreen>
       </iframe>
-<!--      <GoogleMap-->
-<!--        api-key="AIzaSyBCLzJHGBBLI7T6FZjqlpyaxHgWtjOtNH8"-->
-<!--        class="w-full h-72 md:h-auto md:w-1/2 p-3" :center="center"-->
-<!--        :zoom="15">-->
-<!--        <CustomMarker :options="{ position: center, anchorPoint: 'BOTTOM_CENTER' }">-->
-<!--          <div style="text-align: center">-->
-<!--            <div class="flex flex-wrap text-blue-925 bg-blue-250 p-2 rounded"><p class="w-full font-bold text-xl">Cotswold Swimming Pools Ltd</p> </div>-->
-<!--            <span class="icon-[mdi&#45;&#45;arrow-down-circle] w-7 h-7 m-auto text-blue-925" ></span>-->
-<!--          </div>-->
-<!--        </CustomMarker>-->
-<!--      </GoogleMap>-->
 
 
     </div>
@@ -71,8 +60,6 @@
 
 </template>
 <script setup lang="ts">
-//import { GoogleMap, CustomMarker  } from 'vue3-google-map'
-//const center = { lat: 51.88753516860897, lng: -2.1347550019665325 }
 useHead({
   title: 'Contact',
 })

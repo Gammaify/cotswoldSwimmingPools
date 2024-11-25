@@ -26,8 +26,7 @@
     "tailwindcss-animated": "^1.1.2",
     "vue": "latest",
     "vue-router": "latest",
-    "vue3-carousel": "^0.5.1",
-    "vue3-google-map": "^0.21.0"
+    "vue3-carousel": "^0.5.1"
   },
   "devDependencies": {
     "@iconify/tailwind": "^1.1.3",
