@@ -60,8 +60,9 @@
 
 </template>
 <script setup lang="ts">
-
-let isLoading = ref(true)
+useHead({
+  title: 'Contact',
+})
 
 interface DropdownOptions {
   text?: string;

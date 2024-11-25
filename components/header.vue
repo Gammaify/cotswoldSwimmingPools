@@ -9,7 +9,7 @@
         <span class="icon-[majesticons--phone-retro-line] w-6 h-6 mr-1"></span>
         <p>Call Now: 01242 644100</p>
       </a>
-      <a href="https://wa.me/447484033916" class="flex hover:animate-wiggle animate-infinite">
+      <a href="https://wa.me/447484033916" target="_blank" class="flex hover:animate-wiggle animate-infinite">
         <span class="icon-[ic--baseline-whatsapp] w-6 h-6 mr-1"></span>
         <p>Message us on WhatsApp</p>
       </a>
