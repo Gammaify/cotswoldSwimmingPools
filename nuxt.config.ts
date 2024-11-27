@@ -9,13 +9,6 @@ export default defineNuxtConfig({
       },
       crossOriginResourcePolicy: 'same-site',
       crossOriginEmbedderPolicy: false
-    },
-    basicAuth: {
-      name: "csp",
-      pass: "csp1768422",
-      enabled: true,
-      message: "Please Login to view website",
-      include: ["/"]
     }
   },
   css: ['~/assets/css/main.css', '~/assets/css/app.css'],
