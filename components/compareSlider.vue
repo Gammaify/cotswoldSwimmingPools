@@ -29,7 +29,7 @@
 
 </style>
 <template>
-  <h2 class="cardo-bold text-4xl text-center text-blue-925 pt-3 pb-3">Transformations</h2>
+  <h1 class="cardo-bold text-4xl text-center text-blue-925 pt-3 pb-3">Transformations</h1>
   <div class="w-11/12 md:w-3/4 lg:w-1/2 m-auto block " id="compareSlider">
     <Carousel v-bind="config">
       <Slide v-for="slide in data" :key="slide.image_position">
