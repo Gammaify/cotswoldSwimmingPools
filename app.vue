@@ -1,7 +1,13 @@
 <script setup lang="ts">
 useHead({
   titleTemplate: (titleChunk) => {
-    return titleChunk ? `${titleChunk} - Cotswold Swimming Pools` : 'Cotswold Swimming Pools';
+    if (titleChunk == 'Cotswold Swimming Pools') {
+      return 'Cotswold Swimming Pools'
+    }
+    else{
+      return `${titleChunk} - Cotswold Swimming Pools`
+    }
+
   }
 })
 useSeoMeta({
