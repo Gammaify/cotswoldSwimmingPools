@@ -18,6 +18,12 @@
 <script setup lang="ts">
 useHead({
   title: 'About',
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://www.cotswoldswimmingpools.co.uk/about',
+    }
+  ]
 })
 
 interface About {

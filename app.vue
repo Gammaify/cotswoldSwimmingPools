@@ -8,7 +8,13 @@ useHead({
       return `${titleChunk} - Cotswold Swimming Pools`
     }
 
-  }
+  },
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://www.cotswoldswimmingpools.co.uk/',
+    }
+  ]
 })
 useSeoMeta({
   title: 'Cotswold Swimming Pools',

@@ -62,6 +62,12 @@
 <script setup lang="ts">
 useHead({
   title: 'Contact',
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://www.cotswoldswimmingpools.co.uk/contact',
+    }
+  ]
 })
 
 interface DropdownOptions {
