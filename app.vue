@@ -2,7 +2,7 @@
 useHead({
   titleTemplate: (titleChunk) => {
     if (titleChunk == 'Cotswold Swimming Pools') {
-      return 'Home - Cotswold Swimming Pools'
+      return 'Cotswold Swimming Pools'
     }
     else{
       return `${titleChunk} - Cotswold Swimming Pools`
