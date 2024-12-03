@@ -4,6 +4,12 @@ useHead({
     return titleChunk ? `${titleChunk} - Cotswold Swimming Pools` : 'Cotswold Swimming Pools';
   }
 })
+useSeoMeta({
+  title: 'Cotswold Swimming Pools',
+  ogTitle: 'Cotswold Swimming Pools',
+  description: 'Offering nearly a decade of experience in the swimming pool industry, Cotswold Swimming Pools Ltd is passionate about providing high-quality service and maintenance that keeps your pool running smoothly year-round.',
+  ogDescription: 'Offering nearly a decade of experience in the swimming pool industry, Cotswold Swimming Pools Ltd is passionate about providing high-quality service and maintenance that keeps your pool running smoothly year-round.'
+})
 </script>
 
 <template>
