@@ -2,7 +2,7 @@ import {createDirectus, rest, staticToken, createItem} from '@directus/sdk';
 export default defineEventHandler( async (event) => {
     const data = await readBody(event);
     const client = createDirectus('https://cspadmin.gammaify.com')
-        .with(staticToken('GlUkchVDK8SWu0I3AnpWHvUZvNV8CTCc'))
+        .with(staticToken('xRQM1o6Wnpyfy-r7To8dR1Y5ogDLgTNp'))
         .with(rest());
 
     const cloudflareResponse = await verifyTurnstileToken(data['cf-turnstile-response']);
