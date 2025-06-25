@@ -9,7 +9,7 @@
     <Slide v-for="slide in data" :key="slide.id">
       <div class=" border-4 border-beige rounded">
         <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_of_service}?width=500&height=500`" :alt="`${slide?.alternative_text}`" class="pl-3 pt-3 pr-3" />
-        <p class="text-xl text-blue-925 p-3">{{ slide.Name }}</p>
+        <p class="text-xl text-blue-925 p-3">{{ slide.name }}</p>
       </div>
 
     </Slide>
@@ -25,7 +25,7 @@ import {Carousel, Slide, Navigation} from "vue3-carousel";
 
 interface Services {
   id: number;
-  Name: string;
+  name: string;
   image_of_service: string;
   alternative_text: string;
 }
