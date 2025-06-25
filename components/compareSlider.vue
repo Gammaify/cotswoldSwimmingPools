@@ -35,11 +35,11 @@
       <Slide v-for="slide in data" :key="slide.image_position">
         <ImgComparisonSlider>
           <figure slot="first" class="before">
-            <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.before_image}?width=800&height=600`" alt="" />
+            <img :src="`https://cspadmin.gammaify.com/assets/${slide?.before_image}?width=800&height=600`" alt="" />
             <figcaption>Before</figcaption>
           </figure>
           <figure slot="second" class="after">
-            <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.after_image}?width=800&height=600`" alt="" />
+            <img :src="`https://cspadmin.gammaify.com/assets/${slide?.after_image}?width=800&height=600`" alt="" />
             <figcaption>After</figcaption>
           </figure>
 

@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   security: {
     headers:{
       contentSecurityPolicy: {
-        "img-src": ["'self'", "data:", "https://admin.cotswoldswimmingpools.co.uk", "https://maps.gstatic.com", "https://maps.googleapis.com"],
+        "img-src": ["'self'", "data:", "https://cspadmin.gammaify.com", "https://maps.gstatic.com", "https://maps.googleapis.com"],
       },
       crossOriginResourcePolicy: 'same-site',
       crossOriginEmbedderPolicy: false

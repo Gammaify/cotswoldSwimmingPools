@@ -2,7 +2,8 @@ import {createDirectus, rest, staticToken, readSingleton} from '@directus/sdk';
 
 export default defineEventHandler( async () => {
 
-    const client = createDirectus('https://cspadmin.gammaify.com')
+    try{
+const client = createDirectus('https://cspadmin.gammaify.com')
         .with(staticToken('aDC420JnsUO4uBAR9EqFgI_h71uBYWmx'))
         .with(rest());
 
@@ -11,4 +12,8 @@ export default defineEventHandler( async () => {
             fields: ['about_text', 'about_image_1', 'about_image_2']
         })
     )
+    } catch (err){
+        console.log(err)
+    }
+    
 })

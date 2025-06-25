@@ -8,7 +8,7 @@
   <Carousel id="servicesSlider" v-bind="config" class="pb-3 w-3/4 md:2/4 m-auto">
     <Slide v-for="slide in data" :key="slide.id">
       <div class=" border-4 border-beige rounded">
-        <img :src="`https://admin.cotswoldswimmingpools.co.uk/assets/${slide?.image_of_service}?width=500&height=500`" :alt="`${slide?.alternative_text}`" class="pl-3 pt-3 pr-3" />
+        <img :src="`https://cspadmin.gammaify.com/assets/${slide?.image_of_service}?width=500&height=500`" :alt="`${slide?.alternative_text}`" class="pl-3 pt-3 pr-3" />
         <p class="text-xl text-blue-925 p-3">{{ slide.Name }}</p>
       </div>
 
