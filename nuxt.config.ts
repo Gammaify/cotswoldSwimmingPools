@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     basicAuth: {
       name: "csp",
       pass: "csp1768422",
-      enabled: true,
+      enabled: false,
       message: "Please Login to view website",
       include: ["/"]
     }
