@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   },
   turnstile: {
     siteKey: '0x4AAAAAAA0ggsrIdD6SUCoV',
-    secretKey: '0x4AAAAAAA0ggptKCoeOah6Tyf4mWya8iEw',
+    secretKey: process.env.CLOUDFLARE_TURNSTILE_SECRET_KEY,
     addValidateEndpoint: true
   },
   modules: ['nuxt-security', "@nuxtjs/turnstile"]

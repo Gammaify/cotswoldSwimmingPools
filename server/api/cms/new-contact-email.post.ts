@@ -8,11 +8,11 @@ export default defineEventHandler( async (event) => {
     const subject = body.subject;
     const email_content = body.email_content;
     const transport = nodemailer.createTransport({
-        host: "smtp.livemail.co.uk",
+        host: process.env.SMTP_HOST,
         port: 465,
         auth: {
-            user: 'noreply@gammaify.com',
-            pass: 'SGN*5U6b3H&'
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS,
         }
     });
 
