@@ -1,7 +1,12 @@
 import nodemailer from 'nodemailer';
 
 export default defineEventHandler( async (event) => {
+   
     const body = await readBody(event);
+     const cloudflareResponse = await verifyTurnstileToken(body['cf-turnstile-response']);
+    if (!cloudflareResponse.success) {
+        return 'false';
+    }
     const full_name = body.full_name
     const email = body.email;
     const phone = body.phone ?? 'N/A';
@@ -23,17 +28,21 @@ export default defineEventHandler( async (event) => {
         html: `<p>Hello James,</p><i>You have a new message below from a customer:</i><hr><p><b><u>Contact Details</u></b></p><p>Full Name: ${ full_name }</p><p>Email: ${ email }</p><p>Phone: ${ phone }</p><b><u>Message Details</u></b><p>Subject: ${ subject }</p><p>Message: ${ email_content }</p><hr><b>Do not reply to this email. You will have to create a new email to respond to the customer.</b><p>Kind Regards,</p><p>Web Team</p>`,
     };
 
-    transport.sendMail(mailOptions, (error: Error|null) => {
-        if (!error) {
+    if (cloudflareResponse.success) {
+        transport.sendMail(mailOptions, (error: Error|null) => {
+                if (!error) {
 
-            console.log("successfully sent email")
-        }
-        else{
-            console.log(error)
-            return 'false';
-        }
+                    console.log("successfully sent email")
+                }
+                else{
+                    console.log(error)
+                    return 'false';
+                }
 
-    });
+            });
+    }
+
+    
 
 
     return 'true';
