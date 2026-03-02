@@ -30,10 +30,11 @@ export default defineEventHandler( async (event) => {
         }
         else{
             console.log(error)
+            return 'false';
         }
 
     });
 
 
-    return 'success';
+    return 'true';
 })

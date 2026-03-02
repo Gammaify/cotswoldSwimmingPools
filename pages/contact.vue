@@ -135,7 +135,7 @@ const resetForm = () => {
       return acc;
     }, {});
     if (validateForm(formData)) {
-      const { data } = await useFetch('/api/contact/submit', {
+      const { data } = await useFetch('/api/cms/new-contact-email', {
         method: 'POST',
         body:  Object.fromEntries(new FormData(e.target as HTMLFormElement).entries()),
       })
