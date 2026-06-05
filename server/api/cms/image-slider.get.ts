@@ -7,7 +7,7 @@ export default defineEventHandler( async () => {
         .with(rest());
 
     return await client.request(
-        readItems('image_slider', {
+        readItems('Image_Slider', {
             fields: ['image_position', 'image_file', 'alternative_text'],
         })
     )
