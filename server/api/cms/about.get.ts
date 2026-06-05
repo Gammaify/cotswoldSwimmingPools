@@ -2,8 +2,8 @@ import {createDirectus, rest, staticToken, readSingleton} from '@directus/sdk';
 
 export default defineEventHandler( async () => {
 
-    const client = createDirectus('https://cspadmin.gammaify.com')
-        .with(staticToken('k203M2zvZ-88cpGGPe3YM_8LlRq1XY3H'))
+    const client = createDirectus('https://admin.cotswoldswimmingpools.co.uk')
+        .with(staticToken('2w35cE_ABhTKSSTksbls4fenQtN-pIeq'))
         .with(rest());
 //aDC420JnsUO4uBAR9EqFgI_h71uBYWmx
     return await client.request(
